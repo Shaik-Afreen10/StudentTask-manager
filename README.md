@@ -41,3 +41,17 @@ It helps students organize and manage their daily tasks efficiently.
   - Tasks are fetched and displayed in UI
   - User can delete tasks when completed
 
+
+🌐 Live Demo
+    Frontend
+      [Task Manager(client)](https://student-task-manager-puce.vercel.app/)
+    Backend API
+      [Task Manager(server)](https://studenttask-manager.onrender.com)
+
+📂 GitHub Repository
+    https://github.com/Shaik-Afreen10/StudentTask-manager
+⚙️ Run Locally
+  Clone Repository
+  ```bash
+      git clone https://github.com/Shaik-Afreen10/StudentTask-manager.git
+
