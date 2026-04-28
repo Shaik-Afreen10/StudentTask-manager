@@ -8,7 +8,7 @@ function Dashboard() {
   const token = localStorage.getItem("token");
 
   const fetchTasks = useCallback(async () => {
-    const res = await axios.get("http://localhost:5000/tasks", {
+    const res = await axios.get("https://studenttask-manager.onrender.com/tasks", {
       headers: { Authorization: `Bearer ${token}` }
     });
     setTasks(res.data);
@@ -19,7 +19,7 @@ function Dashboard() {
   }, [fetchTasks]);
 
   const addTask = async () => {
-    await axios.post("http://localhost:5000/tasks",
+    await axios.post("https://studenttask-manager.onrender.com/tasks",
       { title },
       { headers: { Authorization: `Bearer ${token}` }}
     );
@@ -27,7 +27,7 @@ function Dashboard() {
   };
 
   const deleteTask = async (id) => {
-    await axios.delete(`http://localhost:5000/tasks/${id}`, {
+    await axios.delete(`https://studenttask-manager.onrender.com/tasks/${id}`, {
       headers: { Authorization: `Bearer ${token}` }
     });
     fetchTasks();

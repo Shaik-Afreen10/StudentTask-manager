@@ -6,7 +6,7 @@ function Login({ setPage }) {
   const [password, setPassword] = useState("");
 
   const login = async () => {
-    const res = await axios.post("http://localhost:5000/login", {
+    const res = await axios.post("https://studenttask-manager.onrender.com/login", {
       email,
       password,
     });
